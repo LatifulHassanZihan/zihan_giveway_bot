@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: zihan-giveaway-bot
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
