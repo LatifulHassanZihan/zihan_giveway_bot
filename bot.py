@@ -6,6 +6,8 @@ import string
 from datetime import datetime
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
+from keep_alive import keep_alive
+keep_alive()
 
 # Configure logging
 logging.basicConfig(
